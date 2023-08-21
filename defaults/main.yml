@@ -1,2 +1,5 @@
 ---
 # defaults file for setup-python-desktop-linux
+
+
+python_version: "3.10"

@@ -8,3 +8,15 @@
    - "os_defaults.yml"
   tags: 
    - main
+   - python
+
+
+- name: "Instalando o Virtualenv"
+  when: os_default is not defined
+  pip:
+    name: virtualenv
+    state: latest
+    executable: pip3
+  become: true
+  tags:
+    - python
